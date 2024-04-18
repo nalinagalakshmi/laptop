@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .sudoku {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  .row {
+    display: flex;
+  }
+  .cell {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+  }
+  .cell:nth-child(3n), .cell:nth-child(6n) {
+    border-right: 2px solid #000;
+  }
+  .cell:nth-child(9n) {
+    border-right: none;
+  }
+  .row:nth-child(3n) .cell {
+    border-bottom: 2px solid #000;
+  }
+  .row:nth-child(9n) .cell {
+    border-bottom: none;
+  }
